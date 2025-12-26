@@ -1,0 +1,22 @@
+{
+  "name": "veriscore-contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts para VeriScore (SBT + Identity) en Cronos EVM",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:cronos-testnet": "hardhat run scripts/deploy.js --network cronosTestnet",
+    "deploy:cronos-mainnet": "hardhat run scripts/deploy.js --network cronosMainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0"
+  }
+}
+
+

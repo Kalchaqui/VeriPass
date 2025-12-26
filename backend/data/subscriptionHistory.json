@@ -1,0 +1,378 @@
+[
+  {
+    "id": 1,
+    "exchangeId": 2,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "x402-payment-0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516-1765218064973",
+    "timestamp": "2025-12-08T18:21:04.999Z"
+  },
+  {
+    "id": 2,
+    "exchangeId": 2,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "x402-payment-0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516-1765219185057",
+    "timestamp": "2025-12-08T18:39:45.080Z"
+  },
+  {
+    "id": 3,
+    "exchangeId": 2,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "x402-payment-0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516-1765219197994",
+    "timestamp": "2025-12-08T18:39:58.013Z"
+  },
+  {
+    "id": 4,
+    "exchangeId": 2,
+    "type": "consumption",
+    "credits": 1,
+    "action": "list_users",
+    "timestamp": "2025-12-08T19:25:21.669Z"
+  },
+  {
+    "id": 5,
+    "exchangeId": 2,
+    "type": "consumption",
+    "credits": 1,
+    "action": "list_users",
+    "timestamp": "2025-12-08T19:25:30.043Z"
+  },
+  {
+    "id": 6,
+    "exchangeId": 2,
+    "type": "consumption",
+    "credits": 1,
+    "action": "list_users",
+    "timestamp": "2025-12-08T19:26:01.591Z"
+  },
+  {
+    "id": 7,
+    "exchangeId": 2,
+    "type": "consumption",
+    "credits": 1,
+    "action": "list_users",
+    "timestamp": "2025-12-08T19:26:24.641Z"
+  },
+  {
+    "id": 8,
+    "exchangeId": 2,
+    "type": "consumption",
+    "credits": 1,
+    "action": "list_users",
+    "timestamp": "2025-12-08T19:27:01.462Z"
+  },
+  {
+    "id": 9,
+    "exchangeId": 2,
+    "type": "consumption",
+    "credits": 1,
+    "action": "list_users",
+    "timestamp": "2025-12-08T19:31:18.611Z"
+  },
+  {
+    "id": 10,
+    "exchangeId": 2,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-08T21:34:35.286Z"
+  },
+  {
+    "id": 11,
+    "exchangeId": 2,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "x402-payment-0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516-1765230982847",
+    "timestamp": "2025-12-08T21:56:22.866Z"
+  },
+  {
+    "id": 12,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "x402-payment-0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516-1765246694681",
+    "timestamp": "2025-12-09T02:18:14.730Z"
+  },
+  {
+    "id": 13,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T02:19:56.628Z"
+  },
+  {
+    "id": 14,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T02:20:54.628Z"
+  },
+  {
+    "id": 15,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T02:21:07.412Z"
+  },
+  {
+    "id": 16,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T02:21:19.679Z"
+  },
+  {
+    "id": 17,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "x402-payment-0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516-1765247210807",
+    "timestamp": "2025-12-09T02:26:50.860Z"
+  },
+  {
+    "id": 18,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T02:27:52.541Z"
+  },
+  {
+    "id": 19,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T02:28:27.839Z"
+  },
+  {
+    "id": 20,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T03:08:07.042Z"
+  },
+  {
+    "id": 21,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-09T03:08:14.734Z"
+  },
+  {
+    "id": 22,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0xc03fd7b3eed8ec9745e0013e20c996be00f5f147bc40cabdc05f4e7cac36713f\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765383702235,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-10T16:21:42.272Z"
+  },
+  {
+    "id": 23,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0x7e3f54992c1079cdc7ff73f747e93c680cbf82ed6415796d2c5f643c154be225\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765393381951,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-10T19:03:02.057Z"
+  },
+  {
+    "id": 24,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0xc28bc7e27c455b6b4c09d17d6c5e67fdd30906e7bffdd8cddfb688ab4d03fe33\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765393434678,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-10T19:03:55.068Z"
+  },
+  {
+    "id": 25,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0xe16bd677e2f3d48c64d52853d1caf3ae13ab5796f0d6543a7761f240c5569d17\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765415173235,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-11T01:06:13.299Z"
+  },
+  {
+    "id": 26,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-11T01:08:23.924Z"
+  },
+  {
+    "id": 27,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-11T01:11:08.046Z"
+  },
+  {
+    "id": 28,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-11T01:11:19.456Z"
+  },
+  {
+    "id": 29,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0x7cb288cecc6c63a3eb5b13c5f38c0e546917504bb0d5f201c669de9533673bf2\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765473729874,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-11T17:22:09.892Z"
+  },
+  {
+    "id": 30,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0x8b586cd502adc4f9125d5bf60347f6d3f471778eaa3719b087e9930371408686\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765475225797,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-11T17:47:05.809Z"
+  },
+  {
+    "id": 31,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0xe70fe503921a91e28402536abbc75d7acd56f140e6f8786f8ad9362d7ef8377a\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765548384980,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-12T14:06:24.992Z"
+  },
+  {
+    "id": 32,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T14:06:57.689Z"
+  },
+  {
+    "id": 33,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T14:07:21.301Z"
+  },
+  {
+    "id": 34,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0xde3271ed5a363a2a50a354568e551bac134003894b8f8207f566f2401c32fd97\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765552140463,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-12T15:09:00.476Z"
+  },
+  {
+    "id": 35,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T15:09:32.081Z"
+  },
+  {
+    "id": 36,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T15:34:03.005Z"
+  },
+  {
+    "id": 37,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0x119eb5cd760af310a82562dce051979189951c876403aa44633721cf874e7de3\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765563280090,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-12T18:14:40.108Z"
+  },
+  {
+    "id": 38,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T18:33:56.463Z"
+  },
+  {
+    "id": 39,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T18:34:04.327Z"
+  },
+  {
+    "id": 40,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T18:34:13.949Z"
+  },
+  {
+    "id": 41,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T18:34:17.515Z"
+  },
+  {
+    "id": 42,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T18:34:19.755Z"
+  },
+  {
+    "id": 43,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T18:34:21.816Z"
+  },
+  {
+    "id": 44,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0xcab4d8082cd8853380e3bdf4d2094be98c4e61f17331154470da0d2ab5b78695\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x38AE1e07D3790eDd382a79f5F47650E0AB694e07\",\"network\":\"avalanche-fuji\",\"chainId\":43113,\"timestamp\":1765567481187,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-12T19:24:42.026Z"
+  },
+  {
+    "id": 45,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-12T19:28:47.697Z"
+  },
+  {
+    "id": 46,
+    "exchangeId": 3,
+    "amount": 0.2,
+    "credits": 10,
+    "paymentTxHash": "{\"transactionHash\":\"0x520d830ac4aff0c59ab2af3bb81d80be2ee8867be23e52f4c64f99e919f02165\",\"resourceUrl\":\"http://localhost:3001/api/subscriptions/purchase\",\"method\":\"POST\",\"amount\":\"0.2\",\"payTo\":\"0x544bBb50642646dd2f9Ef2357D671A8bbD6513ed\",\"network\":\"cronos-testnet\",\"chainId\":338,\"timestamp\":1766725000583,\"from\":\"0x60BE7646A7B9FdfC476C8e7dBDc14a3fDaCfa516\"}",
+    "timestamp": "2025-12-26T04:56:42.107Z"
+  },
+  {
+    "id": 47,
+    "exchangeId": 3,
+    "type": "consumption",
+    "credits": 1,
+    "action": "get_user",
+    "timestamp": "2025-12-26T05:03:29.600Z"
+  }
+]
