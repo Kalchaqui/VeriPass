@@ -95,13 +95,21 @@ graph TB
 
 ## 📦 **Smart Contracts**
 
-Deployed on **Cronos EVM** (Testnet or Mainnet):
+Deployed on **Cronos EVM Testnet** (Chain ID: 338):
 
-- **IdentityRegistry** - Manages user identities and verification levels
-- **CreditScoringMini** - Calculates and stores credit scores
-- **VeriScoreSBT** - Soulbound Token (ERC-721) for verifiable credit scores
+- **IdentityRegistry** - `0x1997AC40627138BCc6Ee38C242A23852bac4250e`
+  - [View on Cronos Explorer](https://explorer.cronos.org/testnet/address/0x1997AC40627138BCc6Ee38C242A23852bac4250e)
+  - Manages user identities and verification levels
 
-**Note:** Contracts need to be deployed on Cronos. Use the deployment scripts in `contracts/scripts/deploy.js`.
+- **CreditScoringMini** - `0x9C432BfC67208AA5F894E87ACE65D605DC1EF3Cb`
+  - [View on Cronos Explorer](https://explorer.cronos.org/testnet/address/0x9C432BfC67208AA5F894E87ACE65D605DC1EF3Cb)
+  - Calculates and stores credit scores
+
+- **VeriScoreSBT** - `0x9C2Cb7711f9B4cA8C7F0E310F315A46CE79771cD`
+  - [View on Cronos Explorer](https://explorer.cronos.org/testnet/address/0x9C2Cb7711f9B4cA8C7F0E310F315A46CE79771cD)
+  - Soulbound Token (ERC-721) for verifiable credit scores
+
+**All contracts are deployed and verified on Cronos Testnet.**
 
 ---
 
@@ -223,16 +231,37 @@ npm run dev
 
 ---
 
-## 🤖 **AI Agents Integration**
+## 🤖 **AI Agents & MCP Integration**
 
-VeriScore includes AI agent capabilities for automated score queries and monitoring.
+VeriScore includes comprehensive AI agent capabilities and MCP Server integration for automated score queries and monitoring.
 
-### **AI Agent Endpoints**
+### **🔌 MCP Server (Model Context Protocol)**
+
+VeriScore exposes credit scoring data via **MCP Server**, allowing AI assistants (ChatGPT, Claude) to directly query credit scores, SBTs, and identity verification.
+
+**Available MCP Tools:**
+- `query_score(walletAddress)` - Query credit score for any wallet
+- `get_user_sbt(walletAddress)` - Get VeriScore SBT token data
+- `verify_identity(walletAddress)` - Verify identity and verification level
+
+**Integration:**
+- Compatible with **Claude Desktop** and **ChatGPT**
+- Exposes VeriScore data to AI assistants via standard MCP protocol
+- **First credit scoring infrastructure accessible via MCP**
+
+### **Crypto.com AI Agent SDK Integration**
 
 - `POST /api/ai-agents/query-score` - Query user score (requires x402 payment)
 - `POST /api/ai-agents/monitor-wallet` - Start automated wallet monitoring
 - `POST /api/ai-agents/execute-action` - Execute automated actions
 - `GET /api/ai-agents/health` - Health check for agents
+
+### **Crypto.com Market Data MCP Integration**
+
+- Real-time token prices for enhanced scoring
+- Historical price data
+- Market trend analysis
+- Score enhancement with market data
 
 ### **Example: Query Score via AI Agent**
 
@@ -299,11 +328,21 @@ curl -X POST http://localhost:3001/api/ai-agents/query-score \
 
 ## 🎨 **Features**
 
-### **x402 Payment Integration**
-- HTTP 402 Payment Required response
-- Cronos x402 Facilitator integration
-- Automatic payment verification
-- Development mode for testing
+### **💳 x402 Payment Integration (Real Testnet)**
+- **HTTP 402 Payment Required** response
+- **Cronos x402 Facilitator** integration (real, not simulated)
+- **Automatic payment verification** on-chain
+- **Real transactions** on Cronos Testnet
+- **On-chain verification** of all payments
+- View transactions: [Cronos Explorer](https://explorer.cronos.org/testnet)
+
+**Payment Flow:**
+1. User requests service → Backend responds with `402 Payment Required`
+2. Frontend generates x402 payment proof
+3. User approves transaction in wallet
+4. Payment executed on Cronos Testnet
+5. Backend verifies payment on-chain
+6. Service granted
 
 ### **Credit System**
 - Prepaid credit model
@@ -323,26 +362,61 @@ curl -X POST http://localhost:3001/api/ai-agents/query-score \
 - Historical price data
 - Score enhancement with market data
 
-### **MCP Server**
-- Model Context Protocol integration
-- Exposes VeriScore data to AI assistants
-- Compatible with ChatGPT and Claude
+### **MCP Server** 🔌
+- **Model Context Protocol (MCP)** integration
+- Exposes VeriScore data to AI assistants (ChatGPT, Claude)
+- **3 Tools Available:**
+  - `query_score` - Query credit score for a wallet address
+  - `get_user_sbt` - Get VeriScore SBT (Soulbound Token) for a wallet
+  - `verify_identity` - Verify identity and verification level
+- Compatible with Claude Desktop and ChatGPT
+- **First implementation of credit scoring data via MCP**
+
+**Example Usage:**
+```javascript
+// AI Assistant can now query VeriScore data
+"Query the credit score for wallet 0x..."
+"Get the SBT for this address..."
+"Verify the identity level..."
+```
+
+---
+
+## 📸 **Screenshots**
+
+> **Note:** Screenshots will be added here. For now, you can see the live application at `http://localhost:3000` after running the frontend.
+
+**Planned Screenshots:**
+- 🏠 Home Page
+- 🔐 Login/Registration with Privy
+- 💳 Credit Purchase with x402 Payment
+- 📊 User Dashboard
+- 🔍 User Search and Details
+- 📈 Usage History
+- 🤖 MCP Server Integration
+- ⛓️ On-chain Transactions (Cronoscan)
+
+**To add screenshots:**
+1. Take screenshots of key features
+2. Save them in `/screenshots` folder
+3. Update this section with image links
 
 ---
 
 ## 📊 **Project Status**
 
 ### **✅ Implemented**
-- Privy email authentication
-- Cronos x402 payment protocol integration
-- Prepaid credit system
-- Mock user database (100 users)
-- Free search + paid detail view
-- Complete dashboard interface
-- Smart contracts (ready for deployment on Cronos)
-- AI Agent endpoints
-- MCP Server structure
-- Market Data integration structure
+- ✅ Privy email authentication
+- ✅ **Cronos x402 payment protocol** (real testnet payments)
+- ✅ **Prepaid credit system** with on-chain verification
+- ✅ Mock user database (100 users)
+- ✅ Free search + paid detail view
+- ✅ Complete dashboard interface
+- ✅ **3 Smart contracts deployed** on Cronos Testnet
+- ✅ **AI Agent endpoints** (Crypto.com AI Agent SDK)
+- ✅ **MCP Server** functional (3 tools exposed)
+- ✅ **Market Data integration** (Crypto.com Market Data MCP)
+- ✅ **On-chain payment verification**
 
 ### **⚠️ Future Enhancements**
 - Real database migration (PostgreSQL/MongoDB)
@@ -387,15 +461,40 @@ Visit [Cronos Faucet](https://cronos.org/faucet) to get testnet tokens.
 
 ---
 
-## 🏆 **Hackathon Submission**
+## 🏆 **Hackathon Submission - Multiple Tracks**
 
-This project is built for the **Cronos x402 Paytech Hackathon** and includes:
+This project is built for the **Cronos x402 Paytech Hackathon** and applies to **4 tracks**:
 
-- ✅ On-chain component (Cronos EVM)
-- ✅ x402-compatible payment flows
-- ✅ AI agent integration
-- ✅ Crypto.com ecosystem integration
-- ✅ Functional prototype
+### **Track 1: Main Track - x402 Applications (Broad Use Cases)** ✅
+- AI agents using x402 for automated score queries
+- Agent-triggered payments via x402 protocol
+- AI-driven contract interactions
+- Automated on-chain actions
+
+### **Track 2: x402 Agentic Finance/Payment Track** ✅
+- Automated settlement pipelines with x402
+- Multi-step x402 automation for credit purchases
+- Prepaid credit system with x402 payments
+- Payment verification flows on-chain
+
+### **Track 3: Crypto.com X Cronos Ecosystem Integrations** ✅
+- **Crypto.com AI Agent SDK** integration for automated queries
+- **Crypto.com Market Data MCP** integration for enhanced scoring
+- Cronos EVM smart contracts deployed
+- x402-powered settlement workflows
+
+### **Track 4: Dev Tooling & Data Virtualization Track** ✅
+- **MCP Server** for AI assistants (ChatGPT, Claude)
+- Data virtualization layer for credit scores
+- Agent-readable feeds via MCP
+- Developer tooling for x402 agents
+
+**Hackathon Requirements:**
+- ✅ On-chain component (Cronos EVM) - **3 contracts deployed**
+- ✅ x402-compatible payment flows - **Real payments on testnet**
+- ✅ AI agent integration - **Crypto.com AI Agent SDK**
+- ✅ Crypto.com ecosystem integration - **Market Data MCP + AI Agent SDK**
+- ✅ Functional prototype - **Full-stack application**
 
 ---
 
