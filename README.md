@@ -1,8 +1,8 @@
-# VeriScore - Credit Scoring Infrastructure for Exchanges
+
 
 <div align="center">
 
-![VeriScore](https://github.com/user-attachments/assets/607b524e-229b-4e25-bc8a-ffa875c4a5d1)
+![veriScore](https://github.com/user-attachments/assets/53844c51-0aa5-477c-ab1b-82672f374c05)
 
 ### **Decentralized Credit Scoring Infrastructure with AI Agents**
 
@@ -460,13 +460,8 @@ This project is built for the **Cronos x402 Paytech Hackathon** and applies to *
 
 ## 📚 **TEAM**
 
-- Arturo Marin Bosquet
 - Diego Raúl Barrionuevo
 
 ---
 
-<div align="center">
 
-**Made with 🔥 for Cronos x402 Paytech Hackathon**
-
-</div>
