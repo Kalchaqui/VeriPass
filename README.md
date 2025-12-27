@@ -16,7 +16,6 @@
 
 **VeriScore** is a B2B credit scoring infrastructure that leverages blockchain technology, the x402 payment protocol, and AI agents to provide secure, transparent, and verifiable credit assessments for exchanges, banks, and financial institutions.
 
-This project has been migrated from Avalanche to Cronos EVM and enhanced with AI agent capabilities for the Cronos x402 Paytech Hackathon.
 
 ### **Key Features**
 
@@ -35,60 +34,21 @@ This project has been migrated from Avalanche to Cronos EVM and enhanced with AI
 ## 🏗️ **Architecture**
 
 ```mermaid
-graph TB
-    subgraph FL["Frontend Layer"]
-        A["Next.js Application"]
-    end
-
-    subgraph BL["Backend Layer"]
-        D["Express API Server"]
-        F["Authentication Service"]
-        G["Scoring Management"]
-        E["x402 Payment Gateway"]
-        AI["AI Agent Service"]
-        MCP["MCP Server"]
-    end
-
-    subgraph DL["Data Layer"]
-        K["Exchange Database"]
-        M["Mock User Database"]
-        L["Transaction History"]
-    end
-
-    subgraph BCL["Blockchain Layer - Cronos EVM"]
-        H["IdentityRegistry Contract"]
-        I["CreditScoringMini Contract"]
-        J["VeriScoreSBT Contract"]
-    end
-
-    subgraph EXT["External Services"]
-        CDC["Crypto.com AI Agent SDK"]
-        MKT["Crypto.com Market Data MCP"]
-    end
-
-    A -->|"API Calls"| D
-    D -->|"Uses"| F
-    D -->|"Uses"| G
-    D -->|"Uses"| E
-    D -->|"Uses"| AI
-    AI -->|"Integrates"| CDC
-    AI -->|"Uses"| MCP
-    MCP -->|"Connects"| MKT
-    F -->|"Stores"| K
-    G -->|"Queries"| M
-    G -->|"Logs"| L
-    E -->|"Calls"| H
-    E -->|"Calls"| I
-    E -->|"Calls"| J
-
-    style A fill:#61dafb,stroke:#333,stroke-width:3px
-    style D fill:#68a063,stroke:#333,stroke-width:3px
-    style E fill:#4a90e2,stroke:#333,stroke-width:3px
-    style AI fill:#9333ea,stroke:#333,stroke-width:3px
-    style MCP fill:#9333ea,stroke:#333,stroke-width:3px
-    style H fill:#e84142,stroke:#333,stroke-width:3px
-    style I fill:#e84142,stroke:#333,stroke-width:3px
-    style J fill:#e84142,stroke:#333,stroke-width:3px
+graph LR
+    A["Frontend<br/>Next.js"] --> B["Backend<br/>Express API"]
+    B --> C["x402 Payments<br/>Cronos Facilitator"]
+    B --> D["Smart Contracts<br/>Cronos EVM"]
+    B --> E["AI Agents<br/>Crypto.com SDK"]
+    B --> F["MCP Server<br/>ChatGPT/Claude"]
+    E --> G["Market Data<br/>Crypto.com MCP"]
+    
+    style A fill:#61dafb
+    style B fill:#68a063
+    style C fill:#4a90e2
+    style D fill:#e84142
+    style E fill:#9333ea
+    style F fill:#9333ea
+    style G fill:#f39c12
 ```
 
 ---
