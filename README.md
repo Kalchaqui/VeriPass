@@ -132,28 +132,39 @@ NEXT_PUBLIC_MERCHANT_WALLET_ADDRESS=0x544bBb50642646dd2f9Ef2357D671A8bbD6513ed
 #### **Backend** (`backend/.env`)
 
 ```env
+# Server Configuration
 PORT=3001
-JWT_SECRET=your-super-secure-jwt-secret-change-this
+JWT_SECRET=veriscore-jwt-secret-change-in-production-2024
 
-# x402 Payment Mode
-X402_MODE=simulated  # Use 'production' for real payments
+X402_MODE=real
 
-# Smart Contract Addresses
-VERISCORE_SBT_ADDRESS=0x1997AC40627138BCc6Ee38C242A23852bac4250e
-IDENTITY_REGISTRY_ADDRESS=0x9C432BfC67208AA5F894E87ACE65D605DC1EF3Cb
-CREDIT_SCORING_ADDRESS=0x9C2Cb7711f9B4cA8C7F0E310F315A46CE79771cD
+# Smart Contract Addresses - Cronos Testnet
+IDENTITY_REGISTRY_ADDRESS=0x1997AC40627138BCc6Ee38C242A23852bac4250e
+CREDIT_SCORING_ADDRESS=0x9C432BfC67208AA5F894E87ACE65D605DC1EF3Cb
+VERISCORE_SBT_ADDRESS=0x9C2Cb7711f9B4cA8C7F0E310F315A46CE79771cD
 
-# Cronos x402 Facilitator
-CRONOS_FACILITATOR_SECRET=your-facilitator-secret
-CRONOS_FACILITATOR_WALLET=0x0000000000000000000000000000000000000000
-
-# RPC URL for Cronos
+# RPC URL for Cronos Testnet
 RPC_URL=https://evm-t3.cronos.org
 
-# Merchant Wallet (receives payments)
-MERCHANT_WALLET_ADDRESS=0x0000000000000000000000000000000000000000
+# Merchant Wallet (receives payments) - same as deployer
+MERCHANT_WALLET_ADDRESS=0x544bBb50642646dd2f9Ef2357D671A8bbD6513ed
 
-PRIVY_APP_SECRET=your-privy-app-secret
+# Cronos x402 Facilitator Settings
+# Merchant wallet que recibe los pagos (debe tener USDC.e para recibir)
+CRONOS_FACILITATOR_WALLET=0x544bBb50642646dd2f9Ef2357D671A8bbD6513ed
+
+# Thirdweb Configuration (for x402 via Thirdweb)
+THIRDWEB_SECRET_KEY=mLhV2_RAOzcP5a9w5-aZUFHEel_T5O3LWJuFY6EVee08bD244nC32UX- xxx
+THIRDWEB_SERVER_WALLET_ADDRESS=0x544bBb50642646dd2f9Ef2357D671A8bbD6513ed
+
+# Wallet Cronos Testnet
+# Dirección: 0xB293Af40a0cfa9Ed46b4B71cFAd9B4b0bAd61dc2
+# 
+# 
+# Para obtener TCRO de testnet para esta wallet:
+# - Faucet: https://cronos.org/faucet
+# - Dirección: 0xB293Af40a0cfa9Ed46b4B71cFAd9B4b0bAd61dc2
+
 ```
 
 ### **Running**
